@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Risque');
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 90px;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+}
+
+.nav {
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.nav ul {
+    padding: 10px;
+    margin: 0;
+}
+
+.nav ul li {
+    float: left;
+    list-style-type: none;
+    border: 1px solid #eee;
+}
+
+.nav ul li a {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.nav ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+#branding {
+    width: 150px;
+    height: 50px;
+    float: left;
+    background-size: 150px;
+}
+
+#minimenu {
+    display: none;
+    float: right;
+    margin-right: 20pt;
+    font-size: 36px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.sect {
+    height: 100%;
+    padding: 95px 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.subSection {
+    height: 100%;
+    padding: 95px 10px;
+    background-color: bisque;
+}
+
+.sectOne {
+    background-image: url("../img/image4.jpg");
+}
+
+.sectTwo {
+    background-image: url("../img/image5.jpg");
+}
+
+.sectThree {
+    background-image: url("../img/image1.jpg");
+}
+
+.site-footer {
+    background-color: rgb(28, 119, 179);
+    color: white;
+    padding: .5rem 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 680px) {
+    #minimenu {
+        display: block !important;
+        float: right;
+    }
+    .nav {
+        display: none;
+        width: 100%;
+    }
+    .nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:640px) {}
+
+@media screen and (max-width:480px) {}
